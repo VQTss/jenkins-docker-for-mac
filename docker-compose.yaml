@@ -2,7 +2,7 @@ version: '3'
 
 services:
   jenkins:
-    image: thaivosoftware/jenkins-arm64:${JENKINS_VERSION}
+    image: ${DOCKER_HUB_NAME}/${DOCKER_NAME}:${JENKINS_VERSION}
     container_name: jenkins
     restart: always
     privileged: true
